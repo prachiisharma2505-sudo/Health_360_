@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Health360 | Health Story{% endblock %}
+{% block breadcrumb %}Health story{% endblock %}
+{% block content %}
+<div class="page-intro">
+  <div><div class="eyebrow"><span class="eyebrow-line"></span> GUIDED DATA EXPLORATION</div><h1>The health <span>story</span></h1><p>Explore the original Health360 story and move through its published narrative.</p></div>
+  <a class="btn btn-secondary" href="{{ tableau_url }}" target="_blank" rel="noopener">Open in Tableau <span>↗</span></a>
+</div>
+<div class="story-intro-card">
+  <div class="story-icon">◉</div>
+  <div><span class="feature-kicker">HEALTH360 · STORY VIEW</span><h2>From health data to meaningful context</h2><p>This page embeds your supplied Tableau Story. Use the controls inside the visualization to navigate its story points and examine the analysis.</p></div>
+</div>
+<section class="embed-panel">
+  <div class="embed-header"><div><span class="embed-status"></span><strong>Health360 / Story 1</strong><span class="embed-subtitle">TABLEAU PUBLIC</span></div><a href="{{ tableau_url }}" target="_blank" rel="noopener" class="open-link">Open separately ↗</a></div>
+  <div class="tableau-frame-wrap story-frame"><iframe title="Health360 healthcare risk and disease analytics story" src="{{ tableau_url }}" allowfullscreen loading="lazy"></iframe></div>
+</section>
+<div class="disclaimer"><strong>Important note</strong><p>This is a data exploration interface, not a medical diagnostic tool. Health findings should be interpreted in context and should not replace advice from qualified healthcare professionals.</p></div>
+{% endblock %}

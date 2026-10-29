@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Health360 | Analytics Dashboard{% endblock %}
+{% block breadcrumb %}Analytics dashboard{% endblock %}
+{% block content %}
+<div class="page-intro">
+  <div><div class="eyebrow"><span class="eyebrow-line"></span> HEALTH DATA EXPLORER</div><h1>Analytics <span>dashboard</span></h1><p>Explore the original Health360 visualization in an embedded, interactive view.</p></div>
+  <a class="btn btn-secondary" href="{{ tableau_url }}" target="_blank" rel="noopener">Open in Tableau <span>↗</span></a>
+</div>
+<div class="notice"><span class="notice-icon">i</span><div><strong>About this view</strong><p>The visualization below is loaded from Tableau Public. Filters and interactions depend on the published workbook and your browser connection.</p></div></div>
+<section class="embed-panel">
+  <div class="embed-header"><div><span class="embed-status"></span><strong>Health360 / Dashboard 1</strong><span class="embed-subtitle">TABLEAU PUBLIC</span></div><a href="{{ tableau_url }}" target="_blank" rel="noopener" class="open-link">Open separately ↗</a></div>
+  <div class="tableau-frame-wrap"><iframe title="Health360 healthcare analytics dashboard" src="{{ tableau_url }}" allowfullscreen loading="lazy"></iframe></div>
+</section>
+<div class="embed-help"><span>↗</span><p><strong>Having trouble loading the dashboard?</strong><br>Some browsers or network settings may block embedded content. Use “Open in Tableau” to view it directly.</p></div>
+{% endblock %}

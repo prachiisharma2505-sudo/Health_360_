@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Health360 | Overview{% endblock %}
+{% block breadcrumb %}Overview{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="eyebrow-line"></span> HEALTHCARE INTELLIGENCE PLATFORM</div>
+    <h1>See the bigger picture.<br><span>Improve health outcomes.</span></h1>
+    <p class="hero-description">Explore health risks, disease patterns, and population-level insights through one clear analytics experience.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ url_for('dashboard') }}">Explore dashboard <span>↗</span></a>
+      <a class="btn btn-secondary" href="{{ url_for('story') }}">View health story <span>→</span></a>
+    </div>
+    <div class="hero-note"><span class="note-check">✓</span> Interactive visualizations · Data-led exploration</div>
+  </div>
+  <div class="hero-art" aria-label="Abstract healthcare analytics illustration">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="orb-core"><span class="pulse-cross">+</span><span class="core-label">HEALTH<br>360</span></div>
+    <div class="float-card float-card-top"><span class="mini-icon mint">↗</span><div><small>ANALYTICS</small><strong>Risk patterns</strong></div></div>
+    <div class="float-card float-card-bottom"><span class="mini-icon blue">⌁</span><div><small>INSIGHTS</small><strong>Health trends</strong></div></div>
+    <span class="art-dot dot-a"></span><span class="art-dot dot-b"></span><span class="art-dot dot-c"></span>
+  </div>
+</section>
+
+<section class="section-heading">
+  <div><div class="eyebrow">YOUR ANALYTICS SPACE</div><h2>Explore Health360</h2><p>Move from the big picture to the details that matter.</p></div>
+  <span class="section-number">01 / 03</span>
+</section>
+
+<section class="feature-grid">
+  <a class="feature-card feature-dark" href="{{ url_for('dashboard') }}">
+    <div class="feature-top"><span class="feature-icon">▦</span><span class="card-arrow">↗</span></div>
+    <span class="feature-kicker">01 · INTERACTIVE VIEW</span>
+    <h3>Analytics dashboard</h3>
+    <p>Explore the published dashboard and interact with the available health analytics visualizations.</p>
+    <span class="feature-link">Open dashboard <b>→</b></span>
+    <div class="decor-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </a>
+  <a class="feature-card feature-mint" href="{{ url_for('story') }}">
+    <div class="feature-top"><span class="feature-icon">◉</span><span class="card-arrow">↗</span></div>
+    <span class="feature-kicker">02 · DATA NARRATIVE</span>
+    <h3>Health story</h3>
+    <p>Follow the original Tableau story to explore the analysis in a guided sequence.</p>
+    <span class="feature-link">Read the story <b>→</b></span>
+    <div class="story-lines"><i></i><i></i><i></i><i></i></div>
+  </a>
+  <div class="feature-card feature-cream">
+    <div class="feature-top"><span class="feature-icon">✳</span><span class="card-arrow">✦</span></div>
+    <span class="feature-kicker">03 · PROJECT PURPOSE</span>
+    <h3>Health insights, made clearer</h3>
+    <p>A unified interface for examining health risk and disease analytics in a more accessible way.</p>
+    <span class="feature-link">Understand the project <b>→</b></span>
+    <div class="cream-stamp">H<br>360</div>
+  </div>
+</section>
+
+<section class="bottom-banner">
+  <div class="banner-symbol">✳</div>
+  <div><div class="eyebrow">START EXPLORING</div><h3>Turn healthcare data into a clearer story.</h3><p>Use the interactive pages to explore the visualizations from your Tableau project.</p></div>
+  <a class="btn btn-light" href="{{ url_for('dashboard') }}">Launch analytics <span>↗</span></a>
+</section>
+{% endblock %}
